@@ -1,0 +1,29 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on 
+RewriteBase /ecproduct/
+RewriteRule ^(front|back)/(.*)/(.*)/(.*)$ index.php?onpage=$1&url=$2&a=$3&id=$4 [L,QSA]
+RewriteRule ^(front|back)/(.*)/(.*)$ index.php?onpage=$1&url=$2&a=$3 [L,QSA]
+RewriteRule ^(front|back)/(.*)$ index.php?onpage=$1&url=$2&a=index [L,QSA]
+RewriteRule ^(front|back)$ index.php?onpage=$1&url=$home&a=index [L,QSA]
+#back
+RewriteRule ^itoffside-admin$ index.php?onpage=back&url=home&a=index [L,QSA]
+#view product
+RewriteRule ^product/(.*)/(.*)$ index.php?onpage=front&url=product&a=$1&id=$2 [L,QSA]
+#all product
+RewriteRule ^product$ index.php?onpage=front&url=product&a=index [L,QSA]
+#view categorie
+RewriteRule ^categorie/(.*)$ index.php?onpage=front&url=categorie&a=index&id=$1 [L,QSA]
+#cart
+RewriteRule ^cart$ index.php?onpage=front&url=cart&a=index [L]
+RewriteRule ^cart/(update|delete)/(.*)$ index.php?onpage=front&url=cart&a=$1&item_id=$2 [L]
+#order
+RewriteRule ^order$ index.php?onpage=front&url=order&a=index [L]
+RewriteRule ^order/(.*)$ index.php?onpage=front&url=order&a=$1 [L]
+#deliveryinformation
+RewriteRule ^deliveryinformation$ index.php?onpage=front&url=deliveryinformation&a=index [L]
+RewriteRule ^deliveryinformation/(.*)$ index.php?onpage=front&url=deliveryinformation&a=$1 [L]
+#howtopay
+RewriteRule ^howtopay$ index.php?onpage=front&url=howtopay&a=index [L]
+#aboutus
+RewriteRule ^aboutus$ index.php?onpage=front&url=aboutus&a=index [L]
+</IfModule>
