@@ -173,7 +173,7 @@ require 'template/front/header.php';
            $('#cartform').submit(); 
         });
         $('.ordercart').click(function(){
-            window.location = 'deliveryinformation';
+            window.location = 'order';
         });
     });
 </script>
