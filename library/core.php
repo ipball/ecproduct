@@ -5,7 +5,7 @@ function base_url() {
 }
 
 function base_path() {
-    return $_SERVER['DOCUMENT_ROOT'] . "";
+    return $_SERVER['DOCUMENT_ROOT'] . "/ecproduct";
 }
 
 function salt_pass($pass) {

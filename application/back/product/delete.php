@@ -25,4 +25,4 @@ if ($query == TRUE) {
 } else {
     echo "error";
 }
-mysql_close();
+

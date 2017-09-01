@@ -13,5 +13,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($query_pc == TRUE) {
         header("location:" . $baseUrl . "/back/productcategorie");
     }
-    mysql_close();
+    
 }

@@ -30,5 +30,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if ($query_pd == TRUE) {
         header("location:" . $baseUrl . "/back/product");
     }
-    mysql_close();
+
 }

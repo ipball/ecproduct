@@ -19,5 +19,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }else{
         header('location:'.$baseUrl.'/back/user/login');
     }
-    mysql_close();
+    
 }

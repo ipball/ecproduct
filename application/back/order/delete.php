@@ -10,4 +10,3 @@ if($query == TRUE){
 }else{
     echo "Error!";
 }
-mysql_close();

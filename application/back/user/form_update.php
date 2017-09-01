@@ -18,4 +18,3 @@ $query_user = $db->update("users", $value_user, $con_user);
 if($query_user == TRUE){
     header("location:" . $baseUrl . "/back/user");
 }
-mysql_close();

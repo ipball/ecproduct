@@ -9,4 +9,3 @@ if($query == TRUE){
 }else{
     echo "Error! You are not delete product in this categorie.";
 }
-mysql_close();

@@ -13,5 +13,4 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $_SESSION[_ss . 'msg_result'] = TRUE;
         header("location:" . $baseUrl . "/back/aboutus");
     }
-    mysql_close();
 }
